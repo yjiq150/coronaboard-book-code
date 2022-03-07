@@ -1,0 +1,19 @@
+{
+  "name": "crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.9",
+    "date-fns": "^2.21.1",
+    "date-fns-tz": "^1.1.4",
+    "lodash": "^4.17.21",
+    "puppeteer": "^9.1.1"
+  }
+}
