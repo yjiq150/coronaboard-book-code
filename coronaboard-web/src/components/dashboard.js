@@ -28,7 +28,7 @@ export function Dashboard(props) {
   const worldFatality = (worldDeath / worldConfirmed) * 100;
   const worldCountry = globalStats.filter((x) => x.confirmed > 0).length;
   const worldCountryPrev = globalStats.filter(
-    (x) => (x.confirmed_prev || 0) === 0,
+    (x) => (x.confirmedPrev || 0) === 0,
   ).length;
 
   // 대한민국 데이터를 별도 추출해서 사용

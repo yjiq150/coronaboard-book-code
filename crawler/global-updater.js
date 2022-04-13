@@ -67,7 +67,7 @@ function findUpdatedRows(newRowsByCc, oldRowsByCc) {
       continue;
     }
 
-    if (isRowDifferent(newRow, oldRow)) {
+    if (isRowEqual(newRow, oldRow)) {
       continue;
     }
 
@@ -77,7 +77,7 @@ function findUpdatedRows(newRowsByCc, oldRowsByCc) {
   return updatedRows;
 }
 
-function isRowDifferent(newRow, prevRow) {
+function isRowEqual(newRow, prevRow) {
   const colsToCompare = [
     'confirmed',
     'death',
