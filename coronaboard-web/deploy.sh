@@ -6,8 +6,11 @@ git pull
 # 의존성 업데이트
 npm install
 
+# 구글 시트에서 최신 데이터 다운로드
+(cd ../tools && node main.js)
+
 # 개츠비 배포용 빌드 수행
-gatsby build
+NODE_OPTIONS='--max-old-space-size=1536' gatsby build
 
 # 캐시 지시자를 어떻게 설정하면 좋은지 개츠비의 공식 가이드: https://www.gatsbyjs.com/docs/caching/
 
